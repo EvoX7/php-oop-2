@@ -22,6 +22,8 @@
     <?php
     require_once __DIR__ .  "/classes/product.php" ?>
     <?php
+    require_once __DIR__ .  "/classes/food.php" ?>
+    <?php 
     require_once __DIR__ .  "/classes/payment.php" ?>
 
 
@@ -33,10 +35,10 @@
     $creditCard1 = new CreditCard('Marco', 'Togni', '546844445478', '10/25', '933');
     $creditCard2 = new CreditCard('Anonymous', 'Guest', '39816422454', '01/23', '489');
 
-    $catProduct = new Product('Oasy nuggets', 3, 'cat', 3.50, 'Super good', 14.50, 'sku45416498');
-    $dogProduct = new Product('Dog Life', 1, 'dog', 6.50, 'Delicious', 18.50, 'sku489264862');
+    $catProduct = new Food('Max Health','Dry','Best nuggets', 3, 'cat', 3.50 . ' Kg', 'Super good', 14.50 . ' €', 'sku45416498','05/23');
+    $dogProduct = new Food('Omega','Cool - Dry','Dog Life', 1, 'dog', 6.50, 'Delicious', 18.50, 'sku489264862', '01/24');
 
-    var_dump($marcoTogni)
+    var_dump($catProduct)
 
 
 

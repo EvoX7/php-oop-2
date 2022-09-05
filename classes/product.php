@@ -9,9 +9,9 @@ class Product {
     private $description;
     private $price;
     private $sku;
+    private $expiryDate;
 
-
-    function __construct($_name, $_quantity, $_animalType, $_weight, $_description, $_price, $_sku)
+    function __construct($_name, $_quantity, $_animalType, $_weight, $_description, $_price, $_sku, $_expiryDate)
     {
         $this->name = $_name;
         $this->quantity = $_quantity;
@@ -20,6 +20,7 @@ class Product {
         $this->description = $_description;
         $this->price = $_price;
         $this->sku = $_sku;
+        $this->expiryDate = $_expiryDate;
     }
 
     public function getName()
@@ -55,5 +56,10 @@ class Product {
     public function getSku()
     {
         return $this->sku;
+    }
+
+    public function getExpiryDate()
+    {
+        return $this->expiryDate;
     }
 }
