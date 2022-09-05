@@ -5,8 +5,8 @@
 class User
 {
 
-    private $name;
-    private $lastName;
+    public $name;
+    public $lastName;
 
 
     function __construct($_name, $_lastName)

@@ -13,8 +13,6 @@ class RegisteredUser extends User
     function __construct($_name, $_lastName, $_email, $_password, $_address, $_phone)
     {
         parent::__construct($_name, $_lastName);
-        $this->name = $_name;
-        $this->lastName = $_lastName;
 
         $this->email = $_email;
         $this->password = $_password;

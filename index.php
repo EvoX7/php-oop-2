@@ -27,14 +27,14 @@
 
     <?php
 
-    $marcoTogni = new RegisteredUser('Marco', 'Togni', 'marco.togni@gmail.com', 'gibberishpasswd', 'Via Roma, 1', '451545745');
+    $marcoTogni = new RegisteredUser('Marco', 'Togni', 'marco.togni@gmmail.com', 'gibberishpasswd', 'Via Napoli, 1', '3495612554');
     $guest = new Guest('Anonymous', 'Guest');
 
     $creditCard1 = new CreditCard('Marco', 'Togni', '546844445478', '10/25', '933');
     $creditCard2 = new CreditCard('Anonymous', 'Guest', '39816422454', '01/23', '489');
 
-    $catProduct = new Product('Oasy nuggets', 3, 'cat', 3.50, 'Super good', 14.50);
-    $dogProduct = new Product('Dog Life', 1, 'dog', 6.50, 'Delicious', 18.50);
+    $catProduct = new Product('Oasy nuggets', 3, 'cat', 3.50, 'Super good', 14.50, 'sku45416498');
+    $dogProduct = new Product('Dog Life', 1, 'dog', 6.50, 'Delicious', 18.50, 'sku489264862');
 
     var_dump($marcoTogni)
 
